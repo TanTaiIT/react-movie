@@ -9,7 +9,7 @@ interface MenuDropdownProps {
 const MenuDropdown = (props: MenuDropdownProps) => {
   const { visible, subMenu } = props
   return (
-    <div className={`absolute border-2 transition-all ease-in bg-black rounded-lg p-2 w-[150px] ${visible ? 'block' : 'hidden'}`}>
+    <div className={`absolute border-2 transition-all ease-in bg-black text-white rounded-lg p-2 w-[150px] ${visible ? 'block' : 'hidden'}`}>
       <ul>
         {
           subMenu && subMenu.map((item, index) => {
